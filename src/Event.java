@@ -5,7 +5,8 @@ import java.awt.event.ActionListener;
  * Created by tjeerd on 1/22/17.
  */
 public class Event implements  ActionListener{
-
+        private String d;
+        private  int f = 0;
         public void actionPerformed(ActionEvent e){
 
             double a = Math.random();
@@ -27,6 +28,10 @@ public class Event implements  ActionListener{
 
             }
 
+            f += b;
+            d = "";
+            d += f;
+            ProjectOne.label2.setText(d);
 
         }
 

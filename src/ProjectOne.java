@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
 /**
@@ -9,8 +7,9 @@ import javax.swing.JFrame;
  */
 public class ProjectOne extends JFrame  {
 
-    public static JLabel label;
+    public static JLabel label, label2;
     public static ImageIcon img, img2, img3, img4 ,img5, img6;
+    public static JTextField text;
 
     public static void main(String[] args) {
         ProjectOne frame = new ProjectOne();
@@ -40,8 +39,8 @@ public class ProjectOne extends JFrame  {
         add(but1);
         Event e = new Event();
         but1.addActionListener(e);
-        JTextField text = new JTextField("hoi");
-        add(text);
+        label2 = new JLabel();
+        add(label2);
 
     }
 
